@@ -1,0 +1,48 @@
+{
+    "name": "dependencies/packagist",
+    "description": "The Dependencies Package Repository.",
+    "keywords": [
+        "dependencies",
+        "packagist"
+    ],
+    "type": "library",
+    "license": "MIT",
+    "homepage": "https://github.com/dependencies-packagist",
+    "authors": [
+        {
+            "name": "jundayw",
+            "email": "jundayw@126.com"
+        }
+    ],
+    "require": {
+        "baota/client": "^1.0",
+        "qwen/qwen-php-client": "^1.0",
+        "annotation/larscan": "^1.1",
+        "open-ai/openai-php-client": "^0.10.3",
+        "deepseek/deepseek-php-client": "^2.0",
+        "ollama/ollama-php-client": "^1.0",
+        "reflective/reflection": "^2.0",
+        "jundayw/laravel-sensitive": "^2.1",
+        "jundayw/laravel-render-provider": "^3.0",
+        "jundayw/laravel-policy": "^5.0",
+        "jundayw/laravel-oauth": "^3.0",
+        "jundayw/laravel-artisan-generator": "^5.0",
+        "jundayw/pinyin": "^3.0",
+        "jundayw/location-based-services": "^3.0",
+        "rfc/request": "^1.0",
+        "rfc/response": "^1.0",
+        "rfc/scannable": "^1.0"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-main": "1.x-dev"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "allow-plugins": {
+            "php-http/discovery": true
+        }
+    }
+}
