@@ -25,7 +25,8 @@ The Dependencies Package Repository
 - manus
     - [manus/manus-php-client](https://packagist.org/packages/manus/manus-php-client) - wip
 - mcp
-    - [mcp/mcp-sdk-php](https://packagist.org/packages/mcp/mcp-sdk-php) - wip
+    - [mcp/mcp-sdk-php](https://packagist.org/packages/mcp/mcp-sdk-php)
+    - [mcp/testing-server](https://packagist.org/packages/mcp/testing-server)
 - ollama
     - [ollama/ollama-php-client](https://packagist.org/packages/ollama/ollama-php-client)
 - open-agent
