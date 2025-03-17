@@ -31,7 +31,8 @@
         "jundayw/location-based-services": "^3.0",
         "rfc/request": "^1.0",
         "rfc/response": "^1.0",
-        "rfc/scannable": "^1.0"
+        "rfc/scannable": "^1.0",
+        "mcp/testing-server": "^1.0"
     },
     "extra": {
         "branch-alias": {
