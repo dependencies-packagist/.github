@@ -13,7 +13,7 @@ The Dependencies Package Repository
 - annotation
     - [annotation/enumeration](https://packagist.org/packages/annotation/enumeration)
     - [annotation/laroute](https://packagist.org/packages/annotation/laroute)
-    - [annotation/larscan](https://packagist.org/packages/annotation/larscan)
+    - [annotation/larscan](https://packagist.org/packages/annotation/larscan) - wip
 - authentication
 - baota
     - [baota/client](https://packagist.org/packages/baota/client)
@@ -21,7 +21,11 @@ The Dependencies Package Repository
     - [deepseek/deepseek-php-client](https://packagist.org/packages/deepseek/deepseek-php-client)
 - dependencies
 - grok
-    - [grok/grok-php-client](https://packagist.org/packages/grok/grok-php-client)
+    - [grok/grok-php-client](https://packagist.org/packages/grok/grok-php-client) - wip
+- manus
+    - [manus/manus-php-client](https://packagist.org/packages/manus/manus-php-client) - wip
+- mcp
+    - [mcp/mcp-sdk-php](https://packagist.org/packages/mcp/mcp-sdk-php) - wip
 - ollama
     - [ollama/ollama-php-client](https://packagist.org/packages/ollama/ollama-php-client)
 - open-agent
