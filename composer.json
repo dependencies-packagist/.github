@@ -23,7 +23,7 @@
         "ollama/ollama-php-client": "^1.0",
         "reflective/reflection": "^2.0",
         "jundayw/laravel-sensitive": "^2.1",
-        "jundayw/laravel-render-provider": "^3.0",
+        "jundayw/laravel-render-provider": "^3.0 || ^4.0",
         "jundayw/laravel-policy": "^5.0",
         "jundayw/laravel-oauth": "^3.0",
         "jundayw/laravel-artisan-generator": "^5.0",
