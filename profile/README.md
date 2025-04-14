@@ -15,6 +15,7 @@ The Dependencies Package Repository
     - [annotation/laroute](https://packagist.org/packages/annotation/laroute)
     - [annotation/larscan](https://packagist.org/packages/annotation/larscan)
 - authentication
+- authorization
 - baota
     - [baota/client](https://packagist.org/packages/baota/client)
 - deepseek
@@ -41,3 +42,4 @@ The Dependencies Package Repository
     - [rfc/scannable](https://packagist.org/packages/rfc/scannable)
 - standards
 - token
+  - [token/jwt](https://packagist.org/packages/token/jwt)
