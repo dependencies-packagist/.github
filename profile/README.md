@@ -40,6 +40,8 @@ The Dependencies Package Repository
     - [rfc/request](https://packagist.org/packages/rfc/request)
     - [rfc/response](https://packagist.org/packages/rfc/response)
     - [rfc/scannable](https://packagist.org/packages/rfc/scannable)
+- routing
+    - [routing/stratum](https://packagist.org/packages/routing/stratum)
 - standards
 - token
   - [token/jwt](https://packagist.org/packages/token/jwt)
