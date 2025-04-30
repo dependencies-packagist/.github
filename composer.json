@@ -15,24 +15,25 @@
         }
     ],
     "require": {
-        "baota/client": "^1.0",
-        "qwen/qwen-php-client": "^1.0",
         "annotation/larscan": "^1.1",
-        "open-ai/openai-php-client": "^0.10.3",
+        "baota/client": "^1.0",
         "deepseek/deepseek-php-client": "^2.0",
-        "ollama/ollama-php-client": "^1.0",
-        "reflective/reflection": "^2.0",
-        "jundayw/laravel-sensitive": "^2.1",
-        "jundayw/laravel-render-provider": "^4.0",
-        "jundayw/laravel-policy": "^5.0",
-        "jundayw/laravel-oauth": "^3.0",
+        "gmtls/openssl-crypto-kit": "^1.0",
         "jundayw/laravel-artisan-generator": "^5.0",
-        "jundayw/pinyin": "^3.0",
+        "jundayw/laravel-oauth": "^3.0",
+        "jundayw/laravel-policy": "^5.0",
+        "jundayw/laravel-render-provider": "^4.0",
+        "jundayw/laravel-sensitive": "^2.1",
         "jundayw/location-based-services": "^3.0",
+        "jundayw/pinyin": "^3.0",
+        "mcp/testing-server": "^1.0",
+        "ollama/ollama-php-client": "^1.0",
+        "open-ai/openai-php-client": "^0.10.3",
+        "qwen/qwen-php-client": "^1.0",
+        "reflective/reflection": "^2.0",
         "rfc/request": "^1.0",
         "rfc/response": "^1.0",
         "rfc/scannable": "^1.0",
-        "mcp/testing-server": "^1.0",
         "token/jwt": "^4.0"
     },
     "extra": {
@@ -43,6 +44,7 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "config": {
+        "sort-packages": true,
         "allow-plugins": {
             "php-http/discovery": true
         }
