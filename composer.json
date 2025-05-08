@@ -18,7 +18,7 @@
         "annotation/larscan": "^1.1",
         "baota/client": "^1.0",
         "deepseek/deepseek-php-client": "^2.0",
-        "gmtls/openssl-crypto-kit": "^1.0 || ^2.0",
+        "gmtls/openssl-crypto-kit": "^1.0 || ^2.0 || ^3.0",
         "jundayw/laravel-artisan-generator": "^5.0",
         "jundayw/laravel-oauth": "^3.0",
         "jundayw/laravel-policy": "^5.0",
