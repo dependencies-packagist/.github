@@ -26,7 +26,6 @@
         "jundayw/laravel-sensitive": "^2.1",
         "jundayw/location-based-services": "^3.0",
         "jundayw/pinyin": "^3.0",
-        "mcp/testing-server": "^1.0",
         "ollama/ollama-php-client": "^1.0",
         "open-ai/openai-php-client": "^0.10.3",
         "qwen/qwen-php-client": "^1.0",
