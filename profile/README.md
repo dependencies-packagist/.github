@@ -47,5 +47,5 @@ The Dependencies Package Repository
 - standards
     - [x] [standards/urn](https://packagist.org/packages/standards/urn)
 - token
-    - [ ] [token/jwk](https://packagist.org/packages/token/jwk)
+    - [x] [token/jwk](https://packagist.org/packages/token/jwk)
     - [x] [token/jwt](https://packagist.org/packages/token/jwt)
