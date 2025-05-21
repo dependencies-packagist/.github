@@ -14,6 +14,7 @@ The Dependencies Package Repository
     - [x] [annotation/enumeration](https://packagist.org/packages/annotation/enumeration)
     - [ ] [annotation/laroute](https://packagist.org/packages/annotation/laroute)
     - [x] [annotation/larscan](https://packagist.org/packages/annotation/larscan)
+    - [x] [annotation/route](https://packagist.org/packages/annotation/route)
 - authentication
 - authorization
 - baota
