@@ -3,26 +3,36 @@ name: Dump Composer Dependencies
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 9-21 * * *'
+    - cron: '0 0-23 * * *'
+    - cron: '30 1-13 * * *'
 
 jobs:
   update:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        php-version: [ '8.0', '8.1', '8.2', '8.3', '8.4' ]
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
+      - name: Decide whether to run the check
+        id: chance
+        run: echo "run=$([ $((RANDOM % 100)) -le 86 ] && echo true || echo false)" >> $GITHUB_OUTPUT
+
+      - uses: actions/checkout@v2
+        if: steps.chance.outputs.run == 'true'
         with:
           ref: 'dependencies'
 
-      - name: Set up PHP
+      - name: Set up PHP ${{ matrix.php-version }}
         uses: shivammathur/setup-php@v2
+        if: steps.chance.outputs.run == 'true'
         with:
-          php-version: '8.3'
+          php-version: ${{ matrix.php-version }}
 
       - name: Install Composer
-        run: |
-          curl -sS https://getcomposer.org/installer | php
-      - name: Run composer update
-        run: |
-          php composer.phar update --prefer-dist
+        if: steps.chance.outputs.run == 'true'
+        run: curl -sS https://getcomposer.org/installer | php
+
+      - name: Check whether the dependencies are normal
+        if: steps.chance.outputs.run == 'true'
+        run: php composer.phar update --prefer-dist
