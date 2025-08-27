@@ -15,12 +15,7 @@
         }
     ],
     "require": {
-        "annotation/enumeration": "^1.0",
-        "annotation/routing": "^2.1",
-        "gmtls/openssl-crypto-kit": "^3.0",
-        "standards/urn": "^2.0",
-        "token/jwk": "^1.0",
-        "token/jwt": "^4.0"
+        "nacosvel/2fa": "^1.0"
     },
     "extra": {
         "branch-alias": {
