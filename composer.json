@@ -15,6 +15,7 @@
         }
     ],
     "require": {
+        "jundayw/tokenable": "^0.10.0",
         "nacosvel/2fa": "^1.0 || ^2.0"
     },
     "extra": {
