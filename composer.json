@@ -15,8 +15,7 @@
         }
     ],
     "require": {
-        "jundayw/tokenable": "^1.0 || ^2.0",
-        "nacosvel/2fa": "^1.0 || ^2.0"
+        "jundayw/message-pack-codec": "^1.0"
     },
     "extra": {
         "branch-alias": {
