@@ -15,7 +15,8 @@
         }
     ],
     "require": {
-        "jundayw/message-pack-codec": "^1.0"
+        "jundayw/message-pack-codec": "^1.0",
+        "jundayw/passport": "^5.0"
     },
     "extra": {
         "branch-alias": {
