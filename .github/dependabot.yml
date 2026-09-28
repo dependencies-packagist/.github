@@ -9,7 +9,7 @@ updates:
       interval: "daily"
     target-branch: "dependencies"
 
-  - package-ecosystem: "pnpm"
+  - package-ecosystem: "npm"
     directory: "/"
     schedule:
       interval: "daily"
