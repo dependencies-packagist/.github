@@ -1,0 +1,9 @@
+{
+  "name": "vue-project",
+  "version": "5.0.0",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@jundayw/axios-signature": "^6.0.0"
+  }
+}
