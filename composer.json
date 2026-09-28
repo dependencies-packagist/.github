@@ -15,8 +15,9 @@
         }
     ],
     "require": {
+        "jundayw/composer-version-plugin": "^1.0",
         "jundayw/message-pack-codec": "^1.0",
-        "jundayw/passport": "^5.0"
+        "jundayw/passport": "^6.0"
     },
     "extra": {
         "branch-alias": {
@@ -26,6 +27,7 @@
     "config": {
         "sort-packages": true,
         "allow-plugins": {
+            "jundayw/composer-version-plugin": true,
             "php-http/discovery": true
         }
     },
