@@ -1,10 +1,10 @@
-name: Dump Composer Dependencies
+name: Dump PNPM Dependencies
 
 on:
   push:
-    branches: [ 'dependencies' ]
+    branches: [ 'package' ]
     paths:
-      - 'composer.json'
+      - 'package.json'
   workflow_dispatch:
   schedule:
     - cron: '0 0-23 * * *'
@@ -15,28 +15,35 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        php-version: [ '8.1', '8.2', '8.3', '8.4' ]
+        node-version: [ '18', '20', '22', '24' ]
 
     steps:
       - name: Decide whether to run the check
         id: chance
         run: echo "run=$([ $((RANDOM % 100)) -le 86 ] && echo true || echo false)" >> $GITHUB_OUTPUT
 
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
         if: steps.chance.outputs.run == 'true'
         with:
-          ref: 'dependencies'
+          ref: 'package'
 
-      - name: Set up PHP ${{ matrix.php-version }}
-        uses: shivammathur/setup-php@v2
+      - name: Set up pnpm
         if: steps.chance.outputs.run == 'true'
+        uses: pnpm/action-setup@v4
         with:
-          php-version: ${{ matrix.php-version }}
+          version: 9
 
-      - name: Install Composer
+      - name: Set up Node.js ${{ matrix.node-version }}
         if: steps.chance.outputs.run == 'true'
-        run: curl -sS https://getcomposer.org/installer | php
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'pnpm'
+
+      - name: Install dependencies
+        if: steps.chance.outputs.run == 'true'
+        run: pnpm install --no-frozen-lockfile
 
       - name: Check whether the dependencies are normal
         if: steps.chance.outputs.run == 'true'
-        run: php composer.phar update --prefer-dist
+        run: pnpm update --latest
